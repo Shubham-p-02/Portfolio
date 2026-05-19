@@ -8,3 +8,6 @@ Thumbs.db
 *.log
 .env
 .env.*
+.vercel
+
+.vercel/
