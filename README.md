@@ -19,7 +19,7 @@ Some browsers restrict `file://` for minor features; Option B avoids that.
 Python 3:
 
 ```bash
-cd "/Users/shubhampatthe/Music/portfolio"
+cd "/Users/shubhampatthe/Desktop/GitHub/portfolio"
 python3 -m http.server 8080
 ```
 
