@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Shubham Patthe — ML Engineer portfolio: NLP, deep learning, RAG, and production systems."
+    />
+    <title>Shubham Patthe — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="logo" href="#">Shubham Patthe</a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__content">
+          <p class="hero__eyebrow">ML Engineer · NLP &amp; Deep Learning</p>
+          <h1 id="hero-heading">Building production-ready models and RAG systems</h1>
+          <p class="hero__lede">
+            Dual-degree student at IIT Kharagpur with research and internship experience in NLP,
+            FinBERT-based fraud detection, and end-to-end deployment.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contact">Get in touch</a>
+            <a class="button button--ghost" href="#projects">View projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About</h2>
+          <div class="prose">
+            <p>
+              ML Engineer with research experience in NLP and deep learning at IIT Kharagpur. Built
+              production-ready systems including a FinBERT-based fraud detector (96% recall) and RAG
+              pipelines. Proficient in PyTorch, LangChain, and end-to-end model deployment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-heading">
+        <div class="container">
+          <h2 id="experience-heading">Experience</h2>
+          <article class="card card--timeline">
+            <header class="card__header">
+              <h3 class="card__title">Data Science Intern</h3>
+              <p class="card__meta">
+                <span class="card__org">WeIntern</span>
+                <span class="card__sep" aria-hidden="true">·</span>
+                <time datetime="2025-12">Dec 2025</time> – <time datetime="2026-01">Jan 2026</time>
+              </p>
+              <p class="card__location">Remote · Pune</p>
+            </header>
+            <ul class="bullet-list">
+              <li>
+                Built and cleaned large datasets of 10,000+ records using Python (Pandas, NumPy),
+                reducing data preprocessing time by ~30% and enhancing model input quality.
+              </li>
+              <li>
+                Conducted exploratory data analysis (EDA) on structured financial and text datasets,
+                uncovering 5+ key trends and correlations that informed feature selection and model
+                design.
+              </li>
+              <li>
+                Engineered a performance analytics system processing 600+ weekly intern records
+                across 5 domains, implementing a composite scoring algorithm and generating 6+
+                statistical visualizations using Apache Superset, Pandas, and Matplotlib.
+              </li>
+            </ul>
+            <p class="card__tags" aria-label="Technologies used">
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Apache Superset</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section section--alt" aria-labelledby="education-heading">
+        <div class="container">
+          <h2 id="education-heading">Education</h2>
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Indian Institute of Technology, Kharagpur</h3>
+              <p class="card__meta">
+                Dual Degree (B.Tech. + M.Tech.)
+                <span class="card__sep" aria-hidden="true">·</span>
+                <time datetime="2022-11">Nov 2022</time> – Present
+              </p>
+              <p class="card__location">Kharagpur, India</p>
+            </header>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading">Projects</h2>
+          <div class="grid grid--projects">
+            <article class="card card--project">
+              <header class="card__header">
+                <h3 class="card__title">Fraud detection (FinBERT + hybrid features)</h3>
+                <p class="card__meta">
+                  BTP project · Prof. C.S. Mishra
+                  <span class="card__sep" aria-hidden="true">·</span>
+                  <time datetime="2026-01">Jan 2026</time> – <time datetime="2026-04">Apr 2026</time>
+                </p>
+              </header>
+              <ul class="bullet-list">
+                <li>
+                  Developed a labelled dataset of 7,595 earnings-call transcript segments from 12
+                  companies (6 SEC-fraud, 6 controls) spanning 2003–2021, with document-level splits to
+                  mitigate data leakage.
+                </li>
+                <li>
+                  Fine-tuned ProsusAI/FinBERT for binary fraud classification (84% accuracy, 89%
+                  fraud recall); integrated FinBERT embeddings with 6 linguistic deception features
+                  for a hybrid detector—96% fraud recall and 87% macro-F1.
+                </li>
+                <li>
+                  Early-detection test on a pre-fraud GE transcript (Q1 2015) yielded 97.78% fraud
+                  probability more than a year before SEC enforcement.
+                </li>
+              </ul>
+              <p class="card__tags" aria-label="Technologies used">
+                <span class="tag">Python</span>
+                <span class="tag">NLP</span>
+              </p>
+              <p class="card__links">
+                <a
+                  class="text-link"
+                  href="https://github.com/Shubham-p-02"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >GitHub profile</a
+                >
+                <span class="card__hint">(resume references GitHub; link repo if public)</span>
+              </p>
+            </article>
+
+            <article class="card card--project">
+              <header class="card__header">
+                <h3 class="card__title">LLM-powered document intelligence (RAG)</h3>
+                <p class="card__meta">
+                  Self project
+                  <span class="card__sep" aria-hidden="true">·</span>
+                  <time datetime="2025-11">Nov 2025</time> – <time datetime="2026-02">Feb 2026</time>
+                </p>
+              </header>
+              <ul class="bullet-list">
+                <li>
+                  Built an end-to-end RAG pipeline for natural language Q&amp;A over custom corpora;
+                  &lt;2s average response latency on Hugging Face Spaces.
+                </li>
+                <li>
+                  Semantic chunking and embedding retrieval with sentence-transformers and ChromaDB;
+                  ~40% better context relevance vs. naive keyword baselines.
+                </li>
+                <li>
+                  Evaluated with RAGAS (faithfulness, answer relevancy, context precision) on 200+
+                  queries; tuned chunk size and retrieval to raise faithfulness from 0.71 to 0.89.
+                </li>
+                <li>
+                  Streamlit app with source citation and confidence scoring for traceable,
+                  hallucination-reduced outputs.
+                </li>
+              </ul>
+              <p class="card__tags" aria-label="Technologies used">
+                <span class="tag">Python</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">ChromaDB</span>
+                <span class="tag">RAGAS</span>
+                <span class="tag">Groq (LLaMA-3)</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Hugging Face Spaces</span>
+              </p>
+            </article>
+
+            <article class="card card--project">
+              <header class="card__header">
+                <h3 class="card__title">Measuring corporate culture</h3>
+                <p class="card__meta">
+                  B.Tech project
+                  <span class="card__sep" aria-hidden="true">·</span>
+                  <time datetime="2025-07">Jul 2025</time> – <time datetime="2025-11">Nov 2025</time>
+                </p>
+              </header>
+              <ul class="bullet-list">
+                <li>
+                  Computed culture scores from 60+ earnings call transcripts (HCL Technologies) via
+                  semi-supervised NLP pipelines.
+                </li>
+                <li>RMSE ≈ 0.023 and MAE ≈ 0.018 vs. benchmark scores.</li>
+                <li>
+                  Cleaned transcripts, built culture dictionaries, trained Word2Vec embeddings for
+                  dimensions such as teamwork, innovation, integrity, respect, and quality; t-SNE
+                  cluster visualization.
+                </li>
+              </ul>
+              <p class="card__tags" aria-label="Technologies used">
+                <span class="tag">NLP</span>
+                <span class="tag">Python</span>
+                <span class="tag">pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">gensim (Word2Vec)</span>
+                <span class="tag">matplotlib</span>
+                <span class="tag">seaborn</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h3 class="skill-block__title">Machine learning &amp; deep learning</h3>
+              <p>PyTorch, TensorFlow, Scikit-learn, FinBERT, Word2Vec, FAISS, LangChain, Hugging Face</p>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-block__title">NLP</h3>
+              <p>
+                Text classification, embeddings, RAG, fine-tuning, sentiment analysis, named entity
+                recognition
+              </p>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-block__title">Data</h3>
+              <p>Pandas, NumPy, Apache Superset, Matplotlib, Seaborn</p>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-block__title">Databases</h3>
+              <p>SQL, ChromaDB (vector DB)</p>
+            </div>
+            <div class="skill-block">
+              <h3 class="skill-block__title">Tools</h3>
+              <p>Git, Streamlit, Hugging Face Spaces, VS Code</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section" aria-labelledby="certifications-heading">
+        <div class="container">
+          <h2 id="certifications-heading">Certifications</h2>
+          <ul class="plain-list">
+            <li>AlgoZenith DSA and CP course <span class="muted">(as listed on resume: “Algozenieth”)</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Contact &amp; links</h2>
+          <p class="contact__lede">Kharagpur, India</p>
+          <ul class="contact__list">
+            <li>
+              <a href="mailto:shubhamp@kgpian.iitkgp.ac.in">shubhamp@kgpian.iitkgp.ac.in</a>
+            </li>
+            <li>
+              <a href="tel:+918626030140">+91 86260 30140</a>
+            </li>
+            <li>
+              <a href="https://github.com/Shubham-p-02" rel="noopener noreferrer" target="_blank"
+                >GitHub — Shubham-p-02</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/shubhampiitkgp" rel="noopener noreferrer" target="_blank"
+                >LinkedIn — shubhampiitkgp</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year"></span> Shubham Patthe. Content sourced from resume (CareerZenith PDF).</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
